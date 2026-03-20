@@ -24,13 +24,15 @@ const projects = [
     description: "Extracted and transformed large datasets using SQL and Python to identify peak demand periods and revenue trends. Ensured data accuracy through cleaning, validation, and quality checks. Designed interactive Power BI dashboards to present actionable insights and utilized data modeling techniques to improve reporting efficiency.",
     achievement: "Interactive BI dashboards for revenue insights",
     tech: ["SQL", "Python", "Power BI", "Data Modeling", "Excel"],
+    github: "https://github.com/seemavaidya-IT/Taxi-Data-Analysis",
   },
   {
     title: "Telecaller Performance Analysis",
     tagline: "Performance Analytics & Reporting",
-    description: "Analyzed telecaller call data to evaluate performance and productivity. Cleaned and processed raw data to ensure accuracy and consistency. Tracked key metrics such as call volume, successful calls, and conversion rate. Identified top-performing telecallers and peak calling hours.",
+    description: "Analyzed call center performance dataset to evaluate productivity and performance. Cleaned and processed raw data to ensure accuracy and consistency. Tracked key metrics such as call volume, successful calls, and conversion rate. Identified top-performing telecallers and peak calling hours.",
     achievement: "Actionable performance dashboards",
-    tech: ["Power BI", "Data Cleaning", "Excel", "Data Analysis", "KPI Tracking"],
+    tech: ["Power BI", "Excel", "Data Cleaning", "Data Analysis", "KPI Tracking"],
+    github: "https://github.com/seemavaidya-IT/Call-Center-Dashboard",
   },
 ];
 
