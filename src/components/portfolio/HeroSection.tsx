@@ -29,7 +29,7 @@ const HeroSection = () => {
               transition={{ delay: 0.2 }}
               className="font-mono text-sm tracking-widest text-hero-accent mb-4 uppercase"
             >
-              Python Developer · Data Scientist
+              Python Developer · Data Scientist · Data Analyst
             </motion.p>
             <h1 className="text-5xl md:text-7xl font-bold text-hero-foreground leading-tight mb-4">
               Seema{" "}

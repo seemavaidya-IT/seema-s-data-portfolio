@@ -63,9 +63,11 @@ const ProjectsSection = () => (
                 <span key={t} className="px-2.5 py-1 text-xs rounded bg-secondary text-secondary-foreground">{t}</span>
               ))}
             </div>
-            <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:text-accent transition-colors font-medium">
-              <Github size={15} /> View on GitHub <ExternalLink size={12} />
-            </a>
+            {p.github && (
+              <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:text-accent transition-colors font-medium">
+                <Github size={15} /> View on GitHub <ExternalLink size={12} />
+              </a>
+            )}
           </motion.div>
         ))}
       </div>
