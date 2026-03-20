@@ -19,7 +19,7 @@ const categories = [
   },
   {
     title: "Tools & Platforms",
-    skills: ["Power BI", "Excel", "Jupyter Notebook", "OpenCV", "Git & GitHub"],
+    skills: ["Power BI", "Excel", "MS Excel (Advanced)", "Jupyter Notebook", "OpenCV", "Git & GitHub"],
   },
 ];
 
