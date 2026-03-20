@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, ArrowDown, Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="hero-gradient min-h-screen flex items-center relative overflow-hidden">
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{
+      {/* Animated floating orbs */}
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-hero-accent/5 blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/3 left-1/6 w-72 h-72 rounded-full bg-hero-glow/5 blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+
+      {/* Grid pattern */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
       }} />
 
@@ -16,9 +20,14 @@ const HeroSection = () => {
           transition={{ duration: 0.7 }}
           className="max-w-3xl"
         >
-          <p className="font-mono text-sm tracking-widest text-hero-accent mb-4 uppercase">
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="font-mono text-sm tracking-widest text-hero-accent mb-4 uppercase"
+          >
             Python Developer · Data Scientist
-          </p>
+          </motion.p>
           <h1 className="text-5xl md:text-7xl font-bold text-hero-foreground leading-tight mb-4">
             Seema{" "}
             <span className="text-gradient">Vaidya</span>
@@ -36,14 +45,33 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 mb-10">
             <a href="mailto:seema.vaidya@email.com" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity glow-accent">
               <Mail size={16} /> Get In Touch
             </a>
-            <a href="https://github.com/seemavaidya-IT" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-hero-muted/20 text-hero-foreground text-sm hover:border-hero-accent/40 transition-colors">
-              <Github size={16} /> GitHub
+            <a href="/resume-seema-vaidya.pdf" download className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-hero-accent/15 text-hero-accent font-medium text-sm hover:bg-hero-accent/25 transition-colors border border-hero-accent/20">
+              <Download size={16} /> Download Resume
             </a>
           </div>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="flex items-center gap-3"
+          >
+            <span className="text-xs text-hero-muted/50 font-mono uppercase tracking-wider mr-2">Find me on</span>
+            <a href="https://github.com/seemavaidya-IT" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
+              <Github size={18} />
+            </a>
+            <a href="https://linkedin.com/in/seema-vaidya" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
+              <Linkedin size={18} />
+            </a>
+            <a href="mailto:seema.vaidya@email.com" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
+              <Mail size={18} />
+            </a>
+          </motion.div>
         </motion.div>
       </div>
 

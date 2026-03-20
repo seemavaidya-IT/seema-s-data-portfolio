@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { Mail, Github, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+
+const socials = [
+  { icon: Github, label: "GitHub", href: "https://github.com/seemavaidya-IT" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/seema-vaidya" },
+  { icon: Mail, label: "Email", href: "mailto:seema.vaidya@email.com" },
+];
 
 const ContactSection = () => (
   <section id="contact" className="hero-gradient py-24">
@@ -11,16 +17,29 @@ const ContactSection = () => (
           I'm actively seeking opportunities in Data Science and Python Development. Feel free to reach out for collaborations or opportunities.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
           <a href="mailto:seema.vaidya@email.com" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition glow-accent">
             <Mail size={16} /> seema.vaidya@email.com
           </a>
-          <a href="https://github.com/seemavaidya-IT" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-hero-muted/20 text-hero-foreground text-sm hover:border-hero-accent/40 transition-colors">
-            <Github size={16} /> GitHub Profile
-          </a>
         </div>
 
-        <p className="mt-8 flex items-center justify-center gap-1.5 text-sm text-hero-muted">
+        {/* Social Icons */}
+        <div className="flex justify-center gap-3 mb-8">
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target={s.href.startsWith("http") ? "_blank" : undefined}
+              rel={s.href.startsWith("http") ? "noreferrer" : undefined}
+              className="w-11 h-11 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5"
+              aria-label={s.label}
+            >
+              <s.icon size={18} />
+            </a>
+          ))}
+        </div>
+
+        <p className="flex items-center justify-center gap-1.5 text-sm text-hero-muted">
           <MapPin size={14} /> Pune, Maharashtra, India
         </p>
       </motion.div>
