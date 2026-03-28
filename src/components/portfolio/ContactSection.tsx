@@ -5,6 +5,7 @@ const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/seemavaidya-IT" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/seema-vaidya-804726275" },
   { icon: Mail, label: "Email", href: "mailto:seemavaidya64@gmail.com" },
+  // update fix
 ];
 
 const ContactSection = () => (
