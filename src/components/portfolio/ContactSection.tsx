@@ -4,7 +4,7 @@ import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/seemavaidya-IT" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/seema-vaidya-804726275" },
-  { icon: Mail, label: "Email", href: "seemavaidya64@gmail.com },
+  { icon: Mail, label: "Email", href: "mailto:seemavaidya64@gmail.com" },
 ];
 
 const ContactSection = () => (
