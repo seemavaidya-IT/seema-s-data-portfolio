@@ -49,7 +49,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-3 mb-10">
-              <a href="mailto:seema.vaidya@email.com" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity glow-accent">
+              <a href="mailto:seemavaidya64@gmail.com" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity glow-accent">
                 <Mail size={16} /> Get In Touch
               </a>
               <a href="/resume-seema-vaidya.pdf" download className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-hero-accent/15 text-hero-accent font-medium text-sm hover:bg-hero-accent/25 transition-colors border border-hero-accent/20">
@@ -68,10 +68,10 @@ const HeroSection = () => {
               <a href="https://github.com/seemavaidya-IT" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
                 <Github size={18} />
               </a>
-              <a href="https://linkedin.com/in/seema-vaidya" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
+              <a href="https://www.linkedin.com/in/seema-vaidya-804726275" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
                 <Linkedin size={18} />
               </a>
-              <a href="mailto:seema.vaidya@email.com" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
+              <a href="mailto:seemavaidya64@gmail.com" className="w-10 h-10 rounded-lg border border-hero-muted/15 flex items-center justify-center text-hero-muted hover:text-hero-accent hover:border-hero-accent/40 transition-all hover:bg-hero-accent/5">
                 <Mail size={18} />
               </a>
             </motion.div>
